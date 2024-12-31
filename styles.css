@@ -1,0 +1,180 @@
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins sebagai font utama */
+    background: radial-gradient(circle, #1b2735, #090a0f);
+    color: rgb(220, 61, 146);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style untuk input overlay */
+#input-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white;
+}
+
+#input-overlay h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#input-overlay input, #input-overlay button {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ff6b6b;
+}
+
+#input-overlay button {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#input-overlay button:hover {
+    background-color: #ff4b4b;
+}
+
+/* Style untuk konten utama */
+#main-content {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    color: #ffcccb;
+    text-shadow: 0 0 20px rgba(255, 182, 193, 0.8);
+}
+
+.message, .romantic-quote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #ffe4e1;
+    margin-top: 1rem;
+}
+
+.romantic-quote {
+    font-style: italic;
+    color: #d6b0ff;
+}
+
+.countdown {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: #ffcc00;
+}
+
+/* Animasi efek kembang api */
+#fireworks, #hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.firework {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+    animation: explode 1.5s ease-in-out infinite;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Animasi efek hati */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6b6b;
+    transform: rotate(45deg);
+    animation: float 5s linear infinite;
+}
+
+.heart::before, .heart::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -10px;
+    left: 0;
+}
+
+.heart::after {
+    left: -10px;
+    top: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+/* Style untuk pesan Happy New Year */
+#happy-new-year {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: #ff9e9d;
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}

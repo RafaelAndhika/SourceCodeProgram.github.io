@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Celebration</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Menambahkan font Lora, Poppins, dan Roboto dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menambahkan audio background -->
+    <audio id="bg-music" src="assets/background-music.mp3" loop></audio>
+
+    <div id="input-overlay">
+        <h2>Enter your partner's name:</h2>
+        <input type="text" id="partner-name" placeholder="Your partner's name">
+        <button onclick="startCelebration()">Start Celebration</button>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <h1 id="to-partner"></h1>
+        <p class="message" id="message-display"></p>
+        <p class="romantic-quote" id="romantic-quote"></p>
+        <div class="countdown" id="countdown"></div>
+        <div id="typing-effect"></div>
+        <!-- Pesan Happy New Year yang panjang -->
+        <h2 id="happy-new-year" style="display: none;">HAPPY NEW YEAR CINTAKUU DEDEE SAYANGG, Timakasii yaa dedee sudaa mauu menemanii mass di tahun 2024 ini. I just want to say that thank you for coming to my life and thank you for always being there for me. I hope you know how much I appreciate you a lot. Timakasii sudaa menjadi bagian hidup mass. Mass harap di tahun yang baru banyak hal-hal baik yang datang untuk kita berdua, tentunya untuk hubungan kita. Semoga senantiasa Tuhan memberkati hubungan kita di tahun yang baru. Kita lewati tahun ini dengan bersama-sama yaa dedee walaupun nanti mungkin banyak cobaan dan godaan, permasalahan-permasalahan, semoga kitaa bisa menyelesaikan dan melawan masalah cobaan itu bersama yaa. Mass sangat sangat cintaa sama dedee, mas harap dedee jugaa cintaa sekali sama mass. Thank youu for all my babyyy, my lovee!!!! 🤍🤍🤍🤍🤍</h2>
+    </div>
+
+    <!-- Efek Kembang Api dan Hati -->
+    <div id="fireworks" class="fireworks"></div>
+    <div id="hearts" class="hearts"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
